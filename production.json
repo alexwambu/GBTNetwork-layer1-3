@@ -1,0 +1,15 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "gbtnetwork-node",
+      "env": "docker",
+      "plan": "starter",
+      "startCommand": "/bin/bash entrypoint.sh",
+      "autoDeploy": true,
+      "envVars": [
+        { "key": "PORT", "value": "8545" }
+      ]
+    }
+  ]
+}
